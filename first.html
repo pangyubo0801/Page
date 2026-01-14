@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>【欢迎来到龐某人的主页】PANG‘s HomePage</title>
+	<link rel="stylesheet" type="text/css" href="css/first.css">
+</head>
+
+<body style="margin: 0px;">
+	<div id="app">
+	<!-- 标题 -->
+	<div class="index">
+		<a href="https://baike.baidu.com/item/%E5%BA%9E%E7%BB%9F/8474"class="watch title">欢迎来到我的首页 【Welcome to my homepage】</a>
+		<p class="watch page">首页 【Homepage】</p>
+	</div>
+
+
+<!-- 封面展示图 -->
+	<div :class="picName" id="one">
+		<!-- onmouseover ="over1(this)" onmouseleave="leave1(this)"onclick="oneFn()"  -->
+		 <div class="hand background1" @click="changePic(1)">
+         <p>个人简介</p>
+         <p>BriefIntroduction</p>
+         <p>自分紹介</p>
+         <img src="imgs/add.png">
+     </div>
+     <div class="hand background2" @click="changePic(2)">
+         <p>爱好</p>
+         <p>Hobit</p>
+         <p>興味</p>
+         <img src="imgs/add.png">
+     </div>
+     <div class="hand background3"@click="changePic(3)">
+         <p>研究</p>
+         <p>Research</p>
+         <p>研究</p>
+         <img src="imgs/add.png">
+     </div>
+     <div class="hand background4"@click="changePic(4)">
+         <p>匆匆岁月</p>
+         <p>Time</p>
+         <p>あっという間</p>
+         <img src="imgs/add.png">
+     </div>
+     <div class="hand background5"@click="changePic(5)">
+         <p>更新日志</p>
+         <p>Log</p>
+         <p>ログ</p>
+         <img src="imgs/add.png">
+     </div>
+</div>
+
+
+<!-- 百叶窗 -->
+<div>
+	<ul style="padding: 0;">
+         <!-- 自我介绍 -->
+		<li :class="[onePic, 'zoom']">
+			<div class="border zoom"style="float: right;"@click="changeImg(4)">
+				<i>更新日志　ログの更新</i>
+			</div>
+			<div class="border zoom"style="float: right;"@click="changeImg(3)">
+				<i>匆匆岁月　あっという間</i>
+			</div>
+			<div class="border zoom"style="float: right;"@click="changeImg(2)">
+				<i>研究</i>
+			</div>
+			<div class="border zoom"style="float: right;"@click="changeImg(1)"> 
+				<i>爱好興味</i>
+			</div>	
+		</li>
+
+		<li :class="[twoPic, 'zoom']">
+			<div class="border zoom"style="float: right;"@click="changeImg(4)">
+				<i>更新日志　ログの更新</i>
+			</div>
+			<div class="border zoom"style="float: right;"@click="changeImg(3)">
+				<i>匆匆岁月　あっという間</i>
+			</div>
+			<div class="border zoom"style="float: right;"@click="changeImg(2)">
+				<i>研究</i>
+			</div>	
+			<div class="border zoom"style="float: left;"@click="changeImg(0)"> 
+				<i>个人简介　自分紹介</i>
+			</div>	
+		</li>
+
+	    <li :class="[threePic, 'zoom']">
+			<div class="border zoom"style="float: right;"@click="changeImg(4)">
+				<i>更新日志　ログの更新</i>
+			</div>
+			<div class="border zoom"style="float: right;"@click="changeImg(3)">
+				<i>匆匆岁月　あっという間</i>
+			</div>
+				<div class="border zoom"style="float: left;"@click="changeImg(1)"> 
+				<i>爱好興味</i>
+			</div>	
+				<div class="border zoom"style="float: left;"@click="changeImg(0)"> 
+				<i>个人简介　自分紹介</i>
+			</div>	
+		</li>
+
+		<li :class="[fourPic, 'zoom']">
+			<div class="border zoom"style="float: right;"@click="changeImg(4)">
+				<i>更新日志　ログの更新</i>
+			</div>
+			<div class="border zoom"style="float: left;"@click="changeImg(2)"> 
+				<i>研究</i>
+			</div>	
+			<div class="border zoom"style="float: left;"@click="changeImg(1)"> 
+				<i>爱好興味</i>
+			</div>	
+			<div class="border zoom"style="float: left;"@click="changeImg(0)"> 
+				<i>个人简介　自分紹介</i>
+			</div>	
+		</li>
+            
+		<li :class="[fivePic, 'zoom']">
+			<div class="border zoom"style="float:left;"@click="changeImg(3)"> 
+				<i>匆匆岁月　あっという間</i>
+			</div>	
+				<div class="border zoom"style="float:left;"@click="changeImg(2)"> 
+				<i>研究</i>
+			</div>	
+			<div class="border zoom"style="float:left;"@click="changeImg(1)"> 
+				<i>爱好興味</i>
+			</div>	
+			<div class="border zoom"style="float:left;"@click="changeImg(0)"> 
+				<i>个人简介　自分紹介</i>
+			</div>	
+		</li>
+         
+	</ul>
+</div>
+
+
+<!-- 介绍 -->
+<div class="introduce">
+	<!-- 主要内容 -->
+<h1 class="intTitle">自我介绍 BriefIntroduction 自分紹介</h1>
+<h2 class="name">龐宁博【PANG NINGBO パン　ネイボウ】</h2>
+<p class="message">I am PANG. Now I have lived in Tokyo,Japan. I have studied at Japan almost 4years.<br/>    I am going to be a guraduated student at musashino University at 2026.           
+</p>
+
+</div>
+
+<!-- 作者照片 -->
+<div class="author">
+	<img src="imgs/2.1.jpg" class="head">
+	<div>
+		<h2 class="name">本人头像</h2>
+		<p class="message authorTextMessage">本人心里状态，此头像包含了本人所有喜好，嘿嘿嘿</p>
+		<button class="Click">点击前往维基百科</button>
+	</div>
+</div>
+
+<!-- 二维码关注 -->
+<div class="content">
+	<div>  
+		<h3>首页</h3> 
+         <p>HomePage</p>
+	 </div>
+	<div>
+		<h3>联系方式</h3> 
+         <p>E-mail：pangnb1997@gmail.com</p>
+	</div>
+	<div>
+		<h3>关于</h3> 
+         <p>About</p>
+	</div>
+	<div>
+         <img src="imgs/3.1.jpg" class="code">
+         <p>扫描二维码进行关注</p>
+	</div>
+</div>
+
+	<!-- 备案号 -->
+    <p class="company">版权所有：龐式集团</p>
+    <!-- <div>{{message}}</div> -->
+
+</div>
+
+</body>
+<!-- <script src="js/jquery-2.1.4.min.js"></script> -->
+<script src="js/vue.min.js"></script>
+<script type="text/javascript">
+
+	
+
+	// vue实现鼠标悬停
+	var vm=new Vue({
+		el:'#app',
+		data:{
+			message:'hello world',
+			isColor:'hand background1',
+			picName:'station',
+			onePic:'onePic',
+			twoPic:'twoPic',
+			threePic:'threePic',
+			fourPic:'fourPic',
+			fivePic:'fivePic'
+		},
+		methods:{
+			enter:function() {
+				this.isColor = 'hand green';
+			},
+			leave:function() {
+				this.isColor = 'hand background1';
+			},
+			changePic(e) {
+				// console.log(typeof(e));
+				this.picName = 'station change';
+				 // 先全部重置
+                this.onePic = 'onePic';
+                this.twoPic = 'twoPic';
+                this.threePic = 'threePic';
+                this.fourPic = 'fourPic';
+                this.fivePic = 'fivePic';
+
+            // 再激活目标
+                  if(e === 1){
+                  this.onePic = 'onePic changeBlock';
+                        }else if(e === 2){
+                  this.twoPic = 'twoPic changeBlock';
+                        }else if(e === 3){
+                  this.threePic = 'threePic changeBlock';
+                        }else if(e === 4){
+                  this.fourPic = 'fourPic changeBlock';
+                        }else{
+                  this.fivePic = 'fivePic changeBlock';
+                        }
+                            
+			},
+			changeImg(e) {
+				this.onePic = 'onePic';
+				this.twoPic = 'twoPic';
+				this.threePic = 'threePic';
+				this.fourPic = 'fourPic';
+				this.fivePic = 'fivePic';
+				if(e === 0){
+					this.onePic = 'onePic changeBlock';
+				}else if(e === 1){
+					this.twoPic = 'twoPic changeBlock';
+				}else if(e === 2){
+					this.threePic = 'threePic changeBlock';
+				}else if(e === 3){
+					this.fourPic = 'fourPic changeBlock';
+				}else{
+					this.fivePic = 'fivePic changeBlock';
+				}
+			},
+        }
+	})
+</script>
+</html> 

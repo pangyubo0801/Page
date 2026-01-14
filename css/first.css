@@ -1,0 +1,223 @@
+    .index{
+		display:flex;
+		background: black;
+		background-size: cover;
+		margin: 1px 0px;
+	}
+	.watch{
+		color: navajowhite;
+		font-size: 30px;
+		margin:20px;
+		font-family: "黑体";
+	}
+	.page{
+		
+		margin-left: 10%;
+	}
+	.title{
+	  	text-decoration:none;
+	  	margin-left: 10%;
+	}
+	.station{
+		display: flex;
+		background: steelblue;
+		height:850px;
+		/*display: none;*/
+	}
+	.hand{
+		flex:1;
+		border-right:0.005px solid white;
+		text-align: center;
+		padding-top: 250px;
+	}
+	.hand p{
+		font-size: 22px;
+		color:whitesmoke;
+		font-family: "黑体";
+	}
+	.background1{
+		background: url("../imgs/5.1.jpg");
+		background-size: cover;
+	}
+
+	.background1:hover{
+		background: url("../imgs/6.1.jpg");
+		background-size: cover;
+	}
+     .background2:hover{
+		background: url("../imgs/6.3.jpg");
+		background-size: cover;
+	}
+	.background3:hover{
+		background: url("../imgs/6.6.jpg");
+		background-size: cover;
+	}
+	.background4:hover{
+		background: url("../imgs/6.4.jpg");
+		background-size: cover;
+	}
+	.background5:hover{
+		background: url("../imgs/6.5.jpg");
+		background-size: cover;
+	}
+
+	.background2{
+		background: url("../imgs/5.2.jpg");
+		background-size: cover;
+	}
+	.background3{
+		background: url("../imgs/5.3.jpg");
+		background-size: cover;
+	}
+	.background4{
+		background: url("../imgs/5.4.jpg");
+		background-size: cover;
+	}
+	.background5{
+		background: url("../imgs/5.5.jpg");
+		background-size: cover;
+	}
+	.introduce{
+		background: url("../imgs/1.11.jpg");
+		background-size: cover;
+		text-align: center;
+        padding: 80px 0px;
+        margin-top: 20px;
+	}
+	.intTitle{
+		font-family: "黑体";
+	}
+	.message{
+		color: navajowhite;
+		font-size: 32px;
+		font-family: "黑体";
+		line-height: 30px;
+	}
+	.author{
+		display: flex;
+		background: #FAFAFA;
+		margin: 30px 0px;
+	}
+	.head{
+	   width: 20%;
+       margin: 69px 69px;
+       border-radius: 30px 30px 30px 30px;
+	}
+	.Click{
+		background: blueviolet;
+		color: white;
+		font-size: 17px;
+		padding: 10px 60px;
+		border-radius: 30px;
+		border: 0px;
+	}
+	.name{
+		margin-top: 70px;
+		font-family: "黑体";
+		color: black;
+	}
+	.authorText{
+		width: 70%;
+	}
+	.content{
+		display: flex;
+		width: 100%;
+		margin: 0 atuo;
+
+	}
+	.content div{
+		flex: 1;
+		margin-top: 50px;
+		text-align: center;
+
+	}
+	.code{
+		
+		  text-align: center;
+	}
+	.content h3{
+               font-size: 25px;
+               color: black;
+               font-family: "粗体";
+               line-height: 15px;
+	}
+
+	.content p{
+		       font-size: 19px;
+               color: rgb(143, 161, 176);
+               font-family: "黑体";
+               line-height: 15px;
+	}
+    .content img{
+    	width: 75%;
+    	height: 75%;
+    }
+    .company{
+    	background: rgb(43, 11, 18);
+    	color: navajowhite;
+    	text-align: center;
+    	margin: 0;
+    	padding: 20px 0px;
+    }
+    .onePic{
+    	background: url("../imgs/7.2.jpg");
+		background-size: cover;
+		height: 850px;
+		display: none;
+    }
+    .twoPic{
+    	background: url("../imgs/8.1.jpg");
+		background-size: cover;
+		height: 850px;
+	    display: none;
+    }
+    .threePic{
+    	background: url("../imgs/8.8.jpg");
+		background-size: cover;
+		height: 850px;
+		display: none;
+    }
+    .fourPic{
+    	background: url("../imgs/8.4.jpg");
+		background-size: cover;
+		height: 850px;
+	    display: none;
+    }
+    .fivePic{
+    	background: url("../imgs/8.2.jpg");
+		background-size: cover;
+		height: 850px;
+		display: none;
+    }
+    .border{
+    	border: 1px solid rgba(255, 255, 255, 0.2);
+    	background: rgba(0, 0, 0, 0.2);
+    	width: 40px;
+    	height: 850px;
+    }
+    .border i{
+         font-family: "粗体黑体";
+         font-size: 20px;
+         color: white;
+         width: 20px;
+         position: absolute;
+         padding-left:10px;
+         padding-top: 350px;   
+    }
+    .change{
+		display: none;
+	}
+	.changeBlock{
+		display: block;
+	}
+	.zoom{
+		animation: zoom 500ms ease-in-out;
+	}
+	@keyframes zoom{
+		0%{
+			opacity: 0;
+		}
+		100%{
+			opacity: 1;
+		}
+	}
